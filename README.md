@@ -1,47 +1,47 @@
-# Hi, I'm Satt.
+# C++ Learning
 
-**Software Engineering student @ Ho Chi Minh City Open University**
+My journey learning C++ as a first-year Software Engineering student.
 
-I'm interested in building software, understanding how things work under the hood, and turning ideas into real projects.
+This repository contains my exercises, experiments, implementations, and notes while transitioning from Python to C++.
+
+## Goals
+
+* Build a strong foundation in C++
+* Understand memory, references, pointers, and object-oriented programming
+* Learn the Standard Template Library (STL)
+* Practice Data Structures & Algorithms
+* Develop better programming habits
+
+## Structure
+
+```text
+basics/     → C++ fundamentals
+arrays/     → Arrays, vectors, and searching
+oop/        → Object-oriented programming
+dsa/        → Data structures and algorithms
+```
+
+## Progress
+
+* [x] Variables & data types
+* [x] Input / output
+* [x] Conditions
+* [x] Functions
+* [x] Loops
+* [ ] Arrays & vectors
+* [ ] Pointers & references
+* [ ] Classes & OOP
+* [ ] STL
+* [ ] Data Structures
+* [ ] Algorithms
+
+## Environment
+
+* C++
+* GCC
+* Git
+* GitHub Codespaces
 
 ---
 
-### Currently
-
-* 🎓 Studying Software Engineering
-* 💻 Learning **C++** and **Data Structures & Algorithms**
-* 🐍 Working with **Python**
-* 📱 Exploring **Flutter** and mobile development
-* 🎮 Building games and experimenting with game systems
-* 🧰 Learning software engineering, Git, and open-source workflows
-
-### Tech
-
-**Languages**
-
-`C++` `Python` `Dart` `Lua`
-
-**Currently exploring**
-
-`Data Structures & Algorithms` `Flutter` `Git` `GitHub`
-
-**Other interests**
-
-`Game Development` `Graphics` `Systems` `Software Architecture`
-
-### Projects
-
-| Project                | Description                                              |
-| ---------------------- | -------------------------------------------------------- |
-| 🎮 **Bound**           | A series of 2D RPG projects                              |
-| ⚙️ **C++ Learning**    | Algorithms, data structures, and programming experiments |
-| 🐍 **Python Projects** | Small tools, experiments, and prototypes                 |
-
-More projects will appear here as I build them.
-
-### GitHub
-
-I use this space to document what I learn, build projects, experiment with ideas, and gradually become a better software engineer.
-
-> **Learn → Build → Break → Understand → Repeat**
-
+> Learn → Build → Break → Understand → Repeat
