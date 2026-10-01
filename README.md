@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# cpp-learning
-My journey learning C++ — covering fundamentals, problem solving, DSA, and practical projects.
-=======
 # C++ Learning
 
 My journey learning C++ as a first-year Software Engineering student.
