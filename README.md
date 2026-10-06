@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # cpp-learning
 My journey learning C++ — covering fundamentals, problem solving, DSA, and practical projects.
 =======
@@ -30,8 +29,8 @@ dsa/        → Data structures and algorithms
 * [x] Variables & data types
 * [x] Input / output
 * [x] Conditions
-* [x] Functions
 * [x] Loops
+* [x] Functions
 * [ ] Arrays & vectors
 * [ ] Pointers & references
 * [ ] Classes & OOP
@@ -49,4 +48,3 @@ dsa/        → Data structures and algorithms
 ---
 
 > Learn → Build → Break → Understand → Repeat
->>>>>>> 6ef534898ed6a213d8366fb3371f87e9f8d47e8d

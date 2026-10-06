@@ -13,8 +13,8 @@ double double_ = 15.999999;                              // (Double because it's
 
 // Char/String Variables
 char char1 = 'S', char2 = 'a', char3 = 't', char4 = 't';
-string str = "This is a string";
-myMajor = "Software Engineering student";
+string str = "This is a string",
+       myMajor = "Software Engineering student";
     
 // Bool Variables
 bool boolean = true, notBoolean = !!false;

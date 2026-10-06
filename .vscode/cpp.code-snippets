@@ -1,0 +1,13 @@
+{
+    "C++ Code Template": {
+        "prefix": "cpp",
+        "body": [
+            "#include <iostream>",
+            "using namespace std;",
+            "",
+            "int main() {",
+            "    $0",
+            "}"
+        ],
+    }
+}
