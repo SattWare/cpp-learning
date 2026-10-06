@@ -29,8 +29,17 @@ bool validateEmail(string email) {
             cout << "Invalid email\n";
             return false;
         }
+    return true;
+}
 
+int main() {
+    cout << "============= Auth =============\n";
+    while (cout << "Email:    " && (!(cin >> email) || !validateEmail(email))) {
+        char option;
+        string newPassword, confirmPassword;
 
+        clearInput();
+        
     if (registeredEmail != email) {
         cout << "This email is not registered\n"
                 "Would you like to register this email?\n"
@@ -61,18 +70,6 @@ bool validateEmail(string email) {
 
         registeredPassword = newPassword;
         }
-
-    return true;
-}
-
-int main() {
-    cout << "============= Auth =============\n";
-    while (cout << "Email:    " && (!(cin >> email) || !validateEmail(email))) {
-        clearInput();
-
-        char option;
-        string newPassword, confirmPassword;
-
     }
     while (cout << "Password:    " && (!(cin >> password) || !validatePassword(password))) clearInput()
 }
