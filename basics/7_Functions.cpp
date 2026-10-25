@@ -15,15 +15,14 @@ void clearInput() {
 
 void clearLine() {
     for (int i = 1; i <= lineCounter; i++) {
-        cout << "\033[A\033[2K";
+        cout << "\033[A\033[2K";  
     }
-} // Functions Overload
-
+    lineCounter = 0;
+} // Function Overload
 
 void clearLine(int amount) {
     for (int i = 1; i <= amount; i++) {
         cout << "\033[A\033[2K";
-        lineCounter--;
     }
 }
 
@@ -40,8 +39,11 @@ bool validateEmail(string email) {
     const int at  = email.find('@'),
               dot = email.find('.');
 
+    cout << email << ' ' << at << ' ' << dot << endl;
+
     if  (at < 1 || at == email.size() - 1 ||
         dot < 1 || dot == at + 1 || dot == email.size() - 1) {
+            clearLine();
             cout << "Invalid email\n";
             lineCounter++;
             return false;
@@ -52,33 +54,34 @@ bool validateEmail(string email) {
 int main() {
     bool validEmail = false; 
     cout << "============= Auth =============\n";
-    while (cout << "Email:    " && (!(cin >> email) || !validEmail)) {
+    while (cout << "Email:    " || lineCounter++ && (!(cin >> email) || !validEmail)) {
+        clearInput();
+
         char option;
         string newPassword, confirmPassword;
-        bool valid = validateEmail(email);
 
-        lineCounter++;
-        clearInput();
+        bool valid = validateEmail(email);
 
         if (valid && registeredEmail == email) {
             validEmail = true; break;
         }
         else if (valid && registeredEmail != email) {
+            lineCounter--;
             cout << "This email is not registered\n"
                     "Would you like to register this email?\n"
                     "(Other previous registered emails will no longer work)\n"
                     "y/n       ", cin >> option;
-            lineCounter += 4;
+            lineCounter += 3;
             if (option == 'y') {
-                clearLine(4);
+                clearLine();
                 bool validPassword = false;
                 bool multipleAttempts = false;
 
-                while (cout << "Set a password:  " && (!(cin >> newPassword) || !validPassword)) {
+                while (cout << "Set a password:  " || lineCounter++ && (!(cin >> newPassword) || !validPassword)) {
                     int invalid = validatePassword(newPassword);
-                    clearInput(); lineCounter++;
+                    clearInput();
                     if (multipleAttempts) clearLine(4);
-                    if (!invalid) { validPassword = true; break; clearLine(4); }
+                    if (!invalid) { validPassword = true; break; }
 
 
                     cout << "Password must be\n"; lineCounter++;
@@ -90,10 +93,9 @@ int main() {
 
                 multipleAttempts = false;
 
-                while (cout << "Confirm password:  " && (!(cin >> confirmPassword) || confirmPassword != newPassword)) {
+                while (cout << "Confirm password:  " || lineCounter++ && (!(cin >> confirmPassword) || confirmPassword != newPassword)) {
                     if (multipleAttempts) clearLine(1);
                     clearLine(1); clearInput();
-                    lineCounter += 2;
 
                     cout << "Confirm password does not match\n";
 

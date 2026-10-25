@@ -2,5 +2,8 @@
     "code-runner.runInTerminal": true,
     "code-runner.showExecutionMessage": false,
     "code-runner.clearPreviousOutput": true,
-    "code-runner.executorMap": {"cpp": "clear && cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"}
+    "code-runner.executorMap": {
+        "cpp": "clear && cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
